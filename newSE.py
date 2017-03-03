@@ -23,11 +23,15 @@ with open("mynew.txt") as input:
   myList = [(*(line.strip().split('\t') for line in input))]
   
 
-#prints out brand name (for use when removing them later  )
+#prints out id (part number) and promocode with tab between them
 for x in range(1,num_lines):
-    if (myList[x][2]) != 'Specialized': 
-             #with open('gpf1.txt', 'w') as file:
+    if (myList[x][2]) != 'Specialized':
+
+#the # lines below were the only thing I could find online that seemed like it would work
+#but all it produced was one line of seemingly random characters
+
+             #with open('pf1.txt', 'w') as file:
                  print(myList[x][11],'\t'+promocode)
                  #for a,b in zip(myList[x][11],promocode):
-                  #   file.write("{}\t{}".format(a,b))
+                 #   file.write("{}\t{}".format(a,b))
 #print("file saved")
